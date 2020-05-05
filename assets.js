@@ -9697,19 +9697,8 @@ $('#sidebar a').each(function () {
 });
 	
 
-$('#category').each(function () {
-    var that = $(this);
-    var id = that.attr('href').substring(1);
-    that.click(function (e) {
-        var header = $('ul'+ id +'"]')
-        if (!header.parent().hasClass('active')) header.trigger('click');
-        $('html, body').animate({ scrollTop: header.offset().top }, 'fast');
-    });
-
-    // If we find a link in the body with similar anchor, add the same behavior
-    $('.body a[href="#'+ id +'"]').click(function (e) {
-        $('#sidebar a[href="#'+ id +'"]').trigger('click');
-    });
+$('#category').click(function() {
+	$('#target').slideToggle();
 });
 
 	

@@ -9698,19 +9698,19 @@ $('#sidebar a').each(function () {
 	
 
 $('#AWR고성능DB튜닝').click(function() {
-	$('#target').slideToggle();
+	$('#AWR고성능DB튜닝').slideToggle();
 });
 	
 $('#성능Q&A').click(function() {
-	$('#target').slideToggle();
+	$('#성능Q&A').slideToggle();
 });
 	
 $('#고도화원리').click(function() {
-	$('#target').slideToggle();
+	$('#고도화원리').slideToggle();
 });
 	
 $('#AWR고성능DB튜닝').click(function() {
-	$('#target').slideToggle();
+	$('#AWR고성능DB튜닝').slideToggle();
 });
 
 	

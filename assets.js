@@ -9695,6 +9695,25 @@ $('#sidebar a').each(function () {
         $('#sidebar a[href="#'+ id +'"]').trigger('click');
     });
 });
+	
+
+$('#category a').each(function () {
+    var that = $(this);
+    var id = that.attr('href').substring(1);
+    that.click(function (e) {
+        var header = $('ul a[class="'+ id +'"]')
+        if (!header.parent().hasClass('active')) header.trigger('click');
+        $('html, body').animate({ scrollTop: header.offset().top }, 'fast');
+    });
+
+    // If we find a link in the body with similar anchor, add the same behavior
+    $('.body a[href="#'+ id +'"]').click(function (e) {
+        $('#sidebar a[href="#'+ id +'"]').trigger('click');
+    });
+});
+
+	
+	
 
 // Hide all/Show all links
 var show = $('<a class=\'control show\'>Show all</a>');

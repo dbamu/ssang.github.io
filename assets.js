@@ -9697,7 +9697,19 @@ $('#sidebar a').each(function () {
 });
 	
 
-$('#category').click(function() {
+$('#AWR고성능DB튜닝').click(function() {
+	$('#target').slideToggle();
+});
+	
+$('#성능Q&A').click(function() {
+	$('#target').slideToggle();
+});
+	
+$('#고도화원리').click(function() {
+	$('#target').slideToggle();
+});
+	
+$('#AWR고성능DB튜닝').click(function() {
 	$('#target').slideToggle();
 });
 

@@ -9698,7 +9698,7 @@ $('#sidebar a').each(function () {
 	
 
 $('#AWR고성능DB튜닝').click(function() {
-	$(h2).nextAll().slideToggle();
+	$(this).nextAll().slideToggle();
 });
 	
 $('#성능Q&A').click(function() {

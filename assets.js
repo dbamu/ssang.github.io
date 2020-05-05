@@ -9697,23 +9697,23 @@ $('#sidebar a').each(function () {
 });
 	
 
-$('#AWR고성능DB튜닝').click(function() {
-	$(this).next().slideToggle();
-});
-	
-$('#성능QnA').click(function() {
-	$(this).next().slideToggle();
-});
-	
+
 $('#고도화원리').click(function() {
 	$(this).next().slideToggle();
 });
-	
+
+$('#성능QnA').click(function() {
+	$(this).next().slideToggle();
+});
+
+$('#AWR고성능DB튜닝').click(function() {
+	$(this).next().slideToggle();
+});
+
 $('#실행계획튜닝').click(function() {
 	$(this).next().slideToggle();
 });
 
-	
 	
 
 // Hide all/Show all links

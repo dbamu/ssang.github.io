@@ -6,7 +6,7 @@
     {% endif %}
   {% endfor %}
   {% for category in site.categories %}
-  <li id="category" ><a href='#{{ category }}'><h2>{{ category | first }}</a></h2>
+  <li><a id="category" href='#{{ category }}'><h2>{{ category | first }}</h2></a>
     <ul>
     {% for posts in category %}
       {% for post in posts %}        

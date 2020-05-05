@@ -9701,7 +9701,7 @@ $('#AWR고성능DB튜닝').click(function() {
 	$(this).next().slideToggle();
 });
 	
-$('#성능Q&A').click(function() {
+$('#성능QnA').click(function() {
 	$(this).next().slideToggle();
 });
 	
@@ -9709,7 +9709,7 @@ $('#고도화원리').click(function() {
 	$(this).next().slideToggle();
 });
 	
-$('#AWR고성능DB튜닝').click(function() {
+$('#실행계획튜닝').click(function() {
 	$(this).next().slideToggle();
 });
 

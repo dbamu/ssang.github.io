@@ -9697,11 +9697,11 @@ $('#sidebar a').each(function () {
 });
 	
 
-$('#category a').each(function () {
+$('#category').each(function () {
     var that = $(this);
     var id = that.attr('href').substring(1);
     that.click(function (e) {
-        var header = $('ul a[class="'+ id +'"]')
+        var header = $('ul'+ id +'"]')
         if (!header.parent().hasClass('active')) header.trigger('click');
         $('html, body').animate({ scrollTop: header.offset().top }, 'fast');
     });

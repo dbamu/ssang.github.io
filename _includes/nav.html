@@ -9,8 +9,8 @@
   <li><h2><a title="{{ category | first }}" href="#">{{ category | first }}</a></h2>
     <ul>
     {% for posts in category %}
-      {% for post in posts %}        
-        <li class='{{ post.type }}'><a href='#{{ post.url }}'>{{ post.title }}</a></li>
+      {% for post in posts %}  
+        <li class='{{ post.type }}'><a title="{{post.title}}" href="{{post.url  | remove: "/"}}">{{ post.title}}</a></li>
       {% endfor %}
     {% endfor %}
     </ul>

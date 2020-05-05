@@ -6,7 +6,7 @@
     {% endif %}
   {% endfor %}
   {% for category in site.categories %}
-  <li><h2>{{ category | first }}</h2>
+  <li id="category" class="hide" ><h2>{{ category | first }}</h2>
     <ul>
     {% for posts in category %}
       {% for post in posts %}        

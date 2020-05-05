@@ -5,9 +5,10 @@
     <li><a href='#{{ post.url }}'>{{ post.title }}</a></li>
     {% endif %}
   {% endfor %}
+  {% for value in 5|ranges %}
   {% for category in site.categories %}
   <li><h2 id="{{category | first }}" style="cursor:pointer" >{{ category | first }}</h2>
-    <ul id="{{category | first | length }}" >
+    <ul id="{{ value }}" >
     {% for posts in category %}
       {% for post in posts %}        
         <li class='{{ post.type }}'><a href='#{{ post.url }}'>{{ post.title }}</a></li>
@@ -15,5 +16,6 @@
     {% endfor %}
     </ul>
   </li>
+ {% endfor %}
 {% endfor %}
 </ul>
